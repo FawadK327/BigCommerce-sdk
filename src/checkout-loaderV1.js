@@ -109,7 +109,7 @@ var bigCommerce_checkout = null;
           queryUrl = btoa(unescape(encodeURIComponent(`products=`+JSON.stringify(qisstpay_products)+`&price=`+totalPrice+'&cartId='+cartObj.id+'&currency='+cartObj.currency.code+'&shipping_total='+total_shipping+'&tax='+total_tax+'&discountedAmount='+discountGiven+'&shipping_methods='+JSON.stringify(shipping_method)+'&platForm=bigCommerce&url=https://'+location.hostname)));
           //*********************************************************************//
           
-          url = `https://dev-apis.qisstpay.com/?identity-token=`+qisstpay_merchant_token+'&queryUrl='+queryUrl; //Url to be passed to the iframe src attribute
+          url = `https://ms.tezcheckout.qisstpay.com/?identity-token=`+qisstpay_merchant_token+'&queryUrl='+queryUrl; //Url to be passed to the iframe src attribute
           qisstpay_modal = `
             <div id="qp-checkout-modal">
               <div class="qp8911_modal modal custom_modal_by_me" id="qp8911_bootstrapModal_checkout" role="dialog">
